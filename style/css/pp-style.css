@@ -1,0 +1,726 @@
+.addedFullscreen {
+  background: url("../img/resize_max.svg");
+}
+
+/*
+.triangle-border.left:after {
+    top: 13px;
+    bottom: auto;
+    left: -17px;
+    border-width: 9px 21px 9px 0;
+    border-color: transparent #fff;
+}
+.triangle-border:after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    left: 47px;
+    border-width: 13px 13px 0;
+    border-style: solid;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+}*/
+iframe {
+  position: absolute;
+  z-index: inherit; }
+
+.on-top {
+  z-index: 999; }
+
+.live-tv li button.pp-disabled {
+  opacity: 0.5; }
+
+/**
+ * Fade in animation
+ *
+ */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.fade-in {
+  opacity: 0;
+  /* make things invisible upon start */
+  -webkit-animation: fadeIn ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeIn ease-in 1;
+  animation: fadeIn ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.25s;
+  -moz-animation-duration: 0.25s;
+  animation-duration: 0.25s; }
+
+/**
+ * Fade out animation
+ *
+ */
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+@keyframes fadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+.fade-out {
+  opacity: 1;
+  /* make things invisible upon start */
+  -webkit-animation: fadeOut ease-in 1;
+  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation: fadeOut ease-in 1;
+  animation: fadeOut ease-in 1;
+  -webkit-animation-fill-mode: forwards;
+  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  animation-duration: 0.75s; }
+
+/* Added */
+.container-left {
+  margin: 0px 15px; }
+
+.collapsed {
+  display: none; }
+
+.pp-navbar-input-item:hover {
+  background-color: transparent !important; }
+
+.navbar-inverse {
+  background-color: #F7F7F8;
+  border-bottom: 1px solid #C5C5D4; }
+
+#pp-nav-logo {
+  max-width: 150px;
+  top: 6px;
+  position: relative; }
+
+/* Moving left menu item container away from nav-logo */
+.navbar-nav {
+  margin: 0 15px; }
+
+/* Active state of a menu item*/
+.navbar-inverse .navbar-nav > .active > a {
+  background-color: #188AC7;
+  color: #FFF; }
+
+.navbar-inverse .navbar-nav > .active > a:hover {
+  background-color: #188AC7;
+  color: #FFF; }
+
+.nav > li {
+  font-size: 16px;
+  font-family: "Avenir";
+  font-weight: 200; }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: rgba(22, 22, 23, 0.9); }
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: rgba(22, 22, 23, 0.9); }
+
+/* Turns off white font color when unclicking dropdown */
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: rgba(22, 22, 23, 0.9); }
+
+/* Expanded dropdown menu */
+.navbar-inverse .navbar-nav > .open > a {
+  background-color: rgba(22, 22, 23, 0.9) !important;
+  padding-bottom: 14px; }
+
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #FFF; }
+
+.nav > li:hover {
+  background-color: rgba(22, 22, 23, 0.9); }
+
+.nav > li > a:hover {
+  color: #FFF !important; }
+
+/* ============= Special case for :hover over pp-navbar-myparrotplay-container ============= */
+#pp-navbar-myparrotplay-container:hover {
+  background-color: transparent;
+  /* No background-color on over over container */ }
+
+#pp-navbar-myparrotplay-name:hover {
+  background-color: rgba(22, 22, 23, 0.9);
+  /* Instead, background-color over over name */ }
+
+/* ========================================================================================== */
+.nav > li > a {
+  position: relative;
+  display: block;
+  margin-top: 0px; }
+
+.navbar-inverse .navbar-toggle {
+  border: 1px solid rgba(22, 22, 23, 0.9); }
+
+.navbar-inverse .navbar-toggle:hover {
+  background-color: rgba(22, 22, 23, 0.9); }
+  .navbar-inverse .navbar-toggle:hover .icon-bar {
+    background-color: #FFF !important; }
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: rgba(22, 22, 23, 0.9); }
+
+.pp-nav-dropdown-expanded a {
+  padding-bottom: 25px; }
+
+#pp-navbar-genre {
+  border-left: 1px solid #E4E4E9; }
+
+.dropdown-menu {
+  background-color: rgba(22, 22, 23, 0.9);
+  border: 0px;
+  border-radius: 6px;
+  top: 49px;
+  margin: 0;
+  width: 220px;
+  min-width: 210px;
+  margin-right: 17px;
+  padding: 0px; }
+
+.dropdown-menu li {
+  color: #F7F7F8; }
+
+.dropdown-menu li a {
+  font-size: 16px;
+  font-family: 'Avenir';
+  font-weight: 200;
+  color: #FFF;
+  padding: 20px 15px;
+  display: inline-block; }
+
+.dropdown-menu li a:hover {
+  background-color: inherit;
+  color: #FFF; }
+
+.pp-dropdown-icon {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  padding: 25px 0px;
+  vertical-align: middle;
+  margin-left: 20px;
+  background-size: 35px 35px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-position-y: 1px; }
+
+.pp-dropdown-item {
+  display: block;
+  width: 220px;
+  height: 62px;
+  vertical-align: middle;
+  background-size: 35px auto;
+  background-position-x: 20px;
+  background-position-y: 12px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding: 20px 0px 0px 75px;
+  font-family: "Avenir";
+  font-weight: 200;
+  font-size: 16px;
+  color: #F7F7F8;
+  text-transform: none; }
+
+.pp-dropdown-item:hover {
+  background-color: #188AC7;
+  color: #F7F7F8; }
+
+#pp-nav-action {
+  background-image: url("../img/icons/action_icon-white.svg"); }
+
+#pp-nav-comedy {
+  background-image: url("../img/icons/comedy_icon-white.svg"); }
+
+#pp-nav-drama {
+  background-image: url("../img/icons/drama_icon-white.png"); }
+
+#pp-nav-family {
+  background-image: url("../img/icons/family_icon-white.png"); }
+
+#pp-nav-documentaries {
+  background-image: url("../img/icons/documentaries_icon-white.png");
+  background-size: 35px 35px; }
+
+#pp-nav-popularity {
+  background-image: url("../img/icons/popular_icon-white.png");
+  background-size: 35px 35px; }
+
+#pp-nav-mostviewed {
+  background-image: url("../img/icons/mostviewed_icon-white.png");
+  background-size: 35px 35px; }
+
+#pp-nav-lastviewed {
+  background-image: url("../img/icons/lastviewed_icon-white.png");
+  background-size: 35px 35px;
+  background-position-y: 12px; }
+
+#pp-nav-dateadded {
+  background-image: url("../img/icons/dateadded_icon-white.png");
+  background-size: 35px 35px; }
+
+/* Added */
+.container-right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: auto;
+  height: 50px; }
+
+.inner-addon {
+  display: none; }
+
+/* Button and dropdown when window width is between 1300px and 1099px */
+#pp-navbar-search-icon {
+  vertical-align: middle;
+  background-image: url("../img/icons/search_icon-black.png");
+  background-size: 20px 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-position-y: 14px; }
+
+#pp-navbar-search-icon:hover {
+  background-image: url("../img/icons/search_icon-white.png"); }
+
+#pp-search-form-container {
+  width: auto;
+  height: 50px;
+  /* margin-left: -220px;  Have it go the other way (towards middle?) uncomment this */ }
+
+#pp-navbar-dropdown-searchfield {
+  height: 36px;
+  width: 250px;
+  margin-top: 7px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 50px;
+  padding-left: 35px;
+  color: rgba(22, 22, 23, 0.9);
+  z-index: 99; }
+
+.inner-addon-dropdown {
+  display: block;
+  position: relative; }
+
+.inner-addon-dropdown .glyphicon {
+  position: absolute;
+  padding: 17px; }
+
+.left-addon-dropdown .glyphicon {
+  left: 0px;
+  height: 10px; }
+
+.left-addon-dropdown input {
+  padding-left: 30px; }
+
+/* We hide the searchfield under 1300px width and replace it with search icon  */
+@media all and (min-width: 1300px) {
+  #pp-navbar-search-icon {
+    display: none; }
+
+  .pp-navabr-input-item:hover {
+    background-color: transparent !important; }
+
+  .inner-addon {
+    display: block;
+    position: relative; }
+
+  .inner-addon .glyphicon {
+    position: absolute;
+    padding: 17px; }
+
+  .left-addon .glyphicon {
+    left: 0px;
+    height: 10px;
+    color: #000; }
+
+  .left-addon input {
+    padding-left: 30px; }
+
+  #pp-navbar-searchfield {
+    height: 36px;
+    width: 250px;
+    margin-top: 7px;
+    margin-right: 20px;
+    border-radius: 25px;
+    padding-left: 35px;
+    color: rgba(22, 22, 23, 0.9); } }
+.pp-nav-icon {
+  display: block;
+  height: 50px;
+  width: 40px; }
+
+.pp-nav-icon:hover {
+  background-color: rgba(22, 22, 23, 0.9); }
+
+.pp-navbar-icon-item a {
+  padding: 0px !important; }
+
+#pp-navbar-shuffle-icon {
+  vertical-align: middle;
+  background-image: url("../img/icons/shuffle_icon-black.png");
+  background-size: 25px 25px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-position-y: 11px; }
+
+#pp-navbar-shuffle-icon:hover {
+  background-image: url("../img/icons/shuffle_icon-white.png"); }
+
+#pp-navbar-chat-icon {
+  vertical-align: middle;
+  background-image: url("../img/icons/chat_icon-black.png");
+  background-size: 20px 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-position-y: 14px; }
+
+#pp-navbar-chat-icon:hover {
+  background-image: url("../img/icons/chat_icon-white.png"); }
+
+#pp-navbar-feedback-icon {
+  vertical-align: middle;
+  background-image: url("../img/icons/feedback_icon-black.png");
+  background-size: 23px 23px;
+  background-position: center center;
+  background-repeat: no-repeat; }
+
+#pp-navbar-feedback-icon:hover {
+  background-image: url("../img/icons/feedback_icon-white.png"); }
+
+#pp-navbar-myparrotplay-container {
+  display: inline-block;
+  width: auto;
+  padding-left: 20px; }
+
+#pp-navbar-myparrotplay-container:hover {
+  color: #000; }
+
+#pp-navbar-myparrotplay-icon {
+  display: inline-block;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
+  margin-right: -55px;
+  margin-top: -42px; }
+
+@supports (overflow: -webkit-marquee) and (justify-content: inherit) {
+  #pp-navbar-myparrotplay-icon {
+    margin-top: 0px !important; } }
+#pp-navbar-myparrotplay-name {
+  display: inline-block;
+  padding-left: 64px !important;
+  width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: left; }
+
+#pp-nav-myservices {
+  background-image: url("../img/icons/myservices_icon-white.png"); }
+
+#pp-nav-myprofile {
+  background-image: url("../img/icons/myprofile_icon-white.png"); }
+
+#pp-nav-taketour {
+  background-image: url("../img/icons/taketour_icon-white.png"); }
+
+#pp-nav-signout {
+  background-image: url("../img/icons/signout_icon-white.png"); }
+
+#pp-nav-myparrotplay-dropdown-menu {
+  left: auto;
+  right: 0px; }
+
+/* Some strange firefox behavior here */
+@-moz-document url-prefix() {
+  .dropdown-menu {
+    margin: 0px; }
+
+  .dropdown-menu: hover;
+    .dropdown-menu-background-color: transparent; }
+#pp-navbar-right {
+  position: absolute;
+  display: inline-block;
+  right: 0px; }
+
+#pp-feedback-form-container {
+  width: 350px;
+  height: 250px;
+  margin-left: -310px; }
+
+.pp-feedback-form {
+  display: block;
+  width: 327px;
+  height: 180px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 6px;
+  background-color: #FFF; }
+
+#pp-feedback-radio-container {
+  display: inline-block;
+  margin-top: 8px;
+  margin-left: 10px;
+  width: 200px;
+  padding: 10px 5px; }
+
+.pp-feedback-radio-label {
+  font-family: "Avenir";
+  font-weight: 200;
+  font-size: 16px;
+  margin-right: 5px; }
+
+#pp-feedback-submit {
+  width: 120px;
+  margin-top: 5px;
+  outline: none;
+  cursor: pointer;
+  margin-right: -1px; }
+
+@media (max-width: 1099px) {
+  .collapsed {
+    display: block !important; }
+
+  .navbar-collapse {
+    box-shadow: inset 0 1px 0 transparent !important;
+    background-color: #188AC7;
+    width: 100vw !important;
+    margin-top: 2px;
+    margin-left: 0px !important;
+    padding: 0px; }
+
+  .navbar-inverse .navbar-collapse {
+    border-color: transparent; }
+
+  .navbar-collapse li a {
+    color: #F7F7F8 !important;
+    padding-left: 20px;
+    font-size: 18px; }
+
+  .navbar-nav {
+    margin: 0px;
+    margin-top: 0px !important; }
+
+  .navbar-inverse .navbar-nav > .open > a {
+    padding-bottom: 10px !important; }
+
+  .container-left {
+    margin-left: 0px; }
+
+  .container {
+    padding-left: 0px; }
+
+  #pp-nav-logo img {
+    margin-left: 30px; }
+
+  /* Hiding expanded state icons in collapsed state */
+  #pp-navbar-genre {
+    border-left: none;
+    background-color: rgba(22, 22, 23, 0.9); }
+
+  #pp-navbar-sortby {
+    background-color: rgba(22, 22, 23, 0.9); }
+
+  /**/
+  #pp-navbar-shuffle-icon {
+    display: none; }
+
+  #pp-navbar-chat-icon {
+    display: none; }
+
+  #pp-navbar-search-icon {
+    display: none; }
+
+  #pp-navbar-feedback-icon {
+    display: none; }
+
+  #pp-searchicon-collapsed {
+    display: block; }
+
+  #pp-navbar-right {
+    left: 0px; }
+
+  .navbar-nav {
+    margin-top: 0px; }
+
+  #pp-navbar-myparrotplay-container {
+    padding-left: 0px; }
+
+  #pp-navbar-myparrotplay-icon {
+    margin-top: -28px;
+    display: none; }
+
+  #pp-navbar-myparrotplay-name {
+    width: 100vw;
+    padding-left: 20px !important; }
+
+  .dropdown-menu {
+    width: 100vw;
+    margin-right: 0px;
+    margin-top: 0px;
+    top: 40px; }
+
+  .pp-dropdown-item {
+    width: 100vw; } }
+
+
+.navbar {
+  z-index: 9999;
+  height: 50px;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0; }
+
+/**
+ * Services
+ */
+.services-container {
+  width: 800px;
+  display: block;
+  position: relative;
+  margin: 40px auto;
+  background-color: #F7F7F8;
+  border-radius: 10px;
+  overflow: hidden; }
+
+/**
+ * Nav
+ */
+img, svg, video {
+  max-width: 100%;
+  height: auto; }
+
+#pp-nav-logo {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  top: -20px;
+  text-align: center; }
+
+.slides, .slides > li, .flex-control-nav, .flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.flex-direction-nav {
+  position: relative;
+  top: -90px;
+  width: 100%; }
+
+.flex-direction-nav a {
+  text-decoration: none;
+  display: inline-block;
+  width: 40px;
+  height: 45px;
+  margin: -20px 0 0;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 30px;
+  -webkit-font-smoothing: antialiased;
+  text-indent: 0; }
+
+.flex-direction-nav a:hover {
+  color: white; }
+
+.flex-direction-nav .flex-next {
+  float: right;
+  margin-right: 40px;
+  content: none; }
+
+.flex-direction-nav .flex-next:before {
+  content: "\e080"; }
+
+.flex-direction-nav .flex-prev {
+  left: 15px;
+  float: left;
+  content: none; }
+
+.flex-direction-nav .flex-prev:before {
+  content: "\e079"; }
+
+.pp-wrapper-loading {
+  background: #000; }
+
+/*No need to have a general top margin on all columns*/
+.col-md-3 {
+  margin-top: 0px !important; }
+
+/* Make sure Bootstrap nv collapses before elements in nav crash */
+@media (max-width: 1099px) {
+  .navbar-header {
+    float: none; }
+
+  .navbar-left, .navbar-right {
+    float: none !important; }
+
+  .navbar-toggle {
+    display: block; }
+
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+  .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px; }
+
+  .navbar-collapse.collapse {
+    display: none !important; }
+
+  .navbar-nav {
+    float: none !important;
+    margin-top: 7.5px; }
+
+  .navbar-nav > li {
+    float: none; }
+
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+  .collapse.in {
+    display: block !important; } }
+/* Overrites bootstrap */
+.container {
+  width: auto; }

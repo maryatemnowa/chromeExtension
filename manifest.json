@@ -1,0 +1,43 @@
+﻿{
+	"manifest_version": 2,
+
+	"name": "Parrot Play",
+	"description": "Parrot Play Chrome Extension",
+	"version": "1.103",
+	
+	"icons": { 
+		"16": "icon-16.png",
+		"128": "icon-128.png"
+	},
+	
+	"background": {
+		"scripts": ["eventPage.js"],
+		"persistent": false
+	},
+	
+	"browser_action": { }, 
+	
+	"content_scripts": [
+    {
+		"matches": ["http://*/*", "https://*/*"],
+		"css": ["/style/css/pp-nav.scss", "/style/css/pp-style.css", "/style/css/bootstrap.min.css", "styleSites.css", "pp.css", "scframe.css"],
+		"js": ["jquery.min.js", "plugin.js", "scframe.js"]
+    }],
+
+	"permissions": [
+		"activeTab",
+		"storage",
+		"tabs",
+		"webNavigation",
+		"http://*/*",
+		"https://*/*"
+	],
+	
+	"web_accessible_resources": [
+		"logo-bird.png",
+		"ajax-loader_.gif",
+		"style/*",
+		//"PPtoolbar.html",
+		"main.html"
+	]
+}

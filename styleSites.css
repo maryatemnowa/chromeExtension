@@ -1,0 +1,31 @@
+.sitesBody {
+    padding-top: 50px !important;
+    overflow-y: scroll !important;
+    width: 100%;
+}
+.sitesHtml {
+    overflow-y: hidden !important;
+}
+.sitePadding{
+    padding-top: 50px !important;
+}
+.siteTop{
+    top: 50px !important;
+}
+
+#buttonResize {
+    width: 26px;
+    height: 26px;
+    left: 520px;
+    position: fixed;
+    top: 10px;
+    z-index: 2147483647;
+}
+#PPnav nav.navbar.navbar-inverse.navbar-fixed-top {
+    background-color: white;
+    border-bottom: 1px solid #C5C5D4;
+}
+#PPnav a{
+    color: #000000 !important;
+}
+

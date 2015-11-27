@@ -1,0 +1,55 @@
+/*
+Error: Invalid CSS after "wOFF�": expected selector, was "����ò╝����Ll..."
+        on line 1 of Avenir-Light.woff
+
+1: wOFF�����ò╝����Ll�����������������������FFTM��Ç������_µÇGDEF��£�������(èGPOS��╝��├��(ô╪EΣGSUB��	Ç��� ��� DvLuOS/2��	á���Z���`å╣Jcmap��	ⁿ��ä��₧áW\-cvt ��
+2: Ç���6���Hα÷fpgm��
+3: ╕��8��╒�╛ì║glyf��
+4: ≡��un�ê╬î ƒhead��â`���3���6╥Uhhea��âö������$,Whmtx��â┤��╠��└Gloca��åÇ��
+5: ��
+6: ╜ε}Vmaxp��ëî��� ��� ªúname��ë¼��┬��gW≤·post��Ép��ç��·╬¢ⁿ┘prep��ö°���├��B}≤τ�������╤H╢¢����┬W[Ñ����╠F?����
+
+Backtrace:
+Avenir-Light.woff:1
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:1162:in `expected'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/scss/parser.rb:1098:in `expected'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/scss/static_parser.rb:21:in `parse_selector'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:424:in `visit_rule'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `block in with_base'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/stack.rb:115:in `with_frame'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/stack.rb:79:in `with_base'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:158:in `visit'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `map'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:157:in `visit'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/engine.rb:285:in `render_with_sourcemap'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `each'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/plugin.rb:82:in `update_stylesheets'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:361:in `watch_or_update'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/exec/sass_scss.rb:51:in `process_result'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/exec/base.rb:52:in `parse'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/lib/sass/exec/base.rb:19:in `parse!'
+c:/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.14/bin/sass:13:in `<top (required)>'
+C:/Ruby22/bin/sass:23:in `load'
+C:/Ruby22/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"wOFF�\": expected selector, was \"����ò╝����Ll...\"\A         on line 1 of Avenir-Light.woff\A \A 1: wOFF�����ò╝����Ll�����������������������FFTM��Ç������_µÇGDEF��£�������(èGPOS��╝��├��(ô╪EΣGSUB��	Ç��� ��� DvLuOS/2��	á���Z���`å╣Jcmap��	ⁿ��ä��₧áW\-cvt ��\A 2: Ç���6���Hα÷fpgm��\A 3: ╕��8��╒�╛ì║glyf��\A 4: ≡��un�ê╬î ƒhead��â`���3���6╥Uhhea��âö������$,Whmtx��â┤��╠��└Gloca��åÇ��\A 5: ��\A 6: ╜ε}Vmaxp��ëî��� ��� ªúname��ë¼��┬��gW≤·post��Ép��ç��·╬¢ⁿ┘prep��ö°���├��B}≤τ�������╤H╢¢����┬W[Ñ����╠F?����"; }

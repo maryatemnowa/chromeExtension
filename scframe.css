@@ -1,0 +1,67 @@
+/*
+html, body {
+	height: 100%;
+	width:100%;
+	-webkit-appearance: none;
+}
+*/
+#SwapcastEmbedded_AppBtn {
+	-webkit-box-shadow: rgb(36, 132, 174) 8px 0px 6px -6px inset;
+	box-shadow: rgb(36, 132, 174) 8px 0px 6px -6px inset;	
+	background-repeat: no-repeat;;
+	border: none !important;
+	margin: 0px !important;
+	padding: 0px !important;
+	position: relative;
+	top: 67px;
+	left: auto;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	z-index: 19999999991;
+	cursor: pointer;
+	float: right;
+	color: #31B4ED;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	/*padding-top: 12px;*/
+	font-family: 'Open Sans';
+	display: block;
+}
+#SwapcastEmbedded_FrameContainer {
+	width: 499px;
+	left: -459px;
+	height:100%;
+	display: inline;
+	position: absolute;
+	z-index:19999999992;
+	top: 36px;
+}
+
+iframe#SwapcastEmbedded_AppFrame {
+	width:459px;
+	height:100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	/*right:0;*/
+	bottom:0;
+	z-index: 19999999990;
+	background: #ccc;
+	border:none;
+	overflow-x: hidden;
+	display: inline;
+	-webkit-appearance: none;
+	-webkit-box-shadow: rgb(177, 178, 178) 8px 0px 6px -6px;
+}
+#SwapcastEmbedded_Loader {
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 40px;
+	bottom: 0;
+	z-index: 19999999991;
+}
