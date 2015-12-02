@@ -1,4 +1,4 @@
-(function () {
+//(function () {
 
 	var host = window.location.host;
 	var fullscreen = false;
@@ -10,7 +10,9 @@
 		'se.sbsdiscovery.no',
 		'viaplay.no',
 		'youtube.com',
-		'www.youtube.com'
+		'netflix.com',
+		'cmore.no',
+		'hbonordic.com'
 	];
 
 
@@ -257,10 +259,13 @@ var initToolbar = function () {
 						</ul>\
 					</div></div></div></div></nav>';
 	}
-	for (var i =0; i < siteHosts.length; i++) {
+$(document).ready(function () {
+    for (var i =0; i < siteHosts.length; i++) {
 		if (RegExp(siteHosts[i]).test(host)){
 			console.log(siteHosts[i]);
 			init()
 		}
 	}
-})();
+});
+	
+//})();
