@@ -20,7 +20,7 @@
 	"content_scripts": [
     {
 		"matches": ["http://*/*", "https://*/*"],
-		"css": ["/style/css/pp-nav.scss", "/style/css/pp-style.css", "/style/css/bootstrap.min.css", "styleSites.css", "pp.css", "scframe.css"],
+		"css": ["/style/css/pp-nav.scss", "/style/css/pp-style.css", /*"/style/css/bootstrap.min.css",*/ "styleSites.css", "pp.css", "scframe.css"],
 		"js": ["jquery.min.js", "plugin.js", "scframe.js"]
     }],
 
@@ -30,7 +30,7 @@
 		"tabs",
 		"webNavigation",
 		"http://*/*",
-		"https://*/*"
+		"https://tv.nrk.no/*"
 	],
 	
 	"web_accessible_resources": [

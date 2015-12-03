@@ -19,7 +19,7 @@
 	var init = function () {
 		if(window === window.top) {
 			$('body').addClass('sitesBody');
-			$('html').addClass('sitesHtml');
+
 			createEl({ 'id':'PPnav' }, 'div', document.body);
 			var nav = document.getElementById('PPnav');
 			addedNavbar(nav);
@@ -37,13 +37,16 @@
 			}
 			if (RegExp('sumo.tv2.no').test(host)){
 				$('header#header').addClass('siteTop');
+				$('#header').addClass('sitePadding');
+				$('#content').addClass('sitePadding');
 			}
-			if (RegExp('underscorejs.org').test(host)){
-				$('div#sidebar').addClass('siteTop');
-			}
+			//if (RegExp('sumo.tv2.no').test(host)){
+			//
+			//}
 			if (RegExp('vgtv.no').test(host)){
 				$('body').addClass('siteTop');
 				$('div.wrapper').addClass('siteTop');
+				$('html').addClass('sitesHtml');
 			}
 		}
 	};
@@ -231,12 +234,6 @@ var initToolbar = function () {
 		div.innerHTML = '<nav class="navbar navbar-inverse navbar-fixed-top">\
 						<div class="container container-left">\
 						<div class="navbar-header">\
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">\
-						<span class="sr-only">Toggle navigation</span>\
-					<span class="icon-bar"></span>\
-						<span class="icon-bar"></span>\
-						<span class="icon-bar"></span>\
-						</button>\
 						<ul id="pp-nav-logo" data-toggle="tooltip" data-placement="bottom" title="Back to the nest">\
 						<li>\
 						<a href="https://test.cstickmedia.com/" target="_blank">\
@@ -259,7 +256,7 @@ var initToolbar = function () {
 						</ul>\
 					</div></div></div></div></nav>';
 	}
-$(document).ready(function () {
+$(document).ready(function () { 
     for (var i =0; i < siteHosts.length; i++) {
 		if (RegExp(siteHosts[i]).test(host)){
 			console.log(siteHosts[i]);

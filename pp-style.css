@@ -1,3 +1,4 @@
+#PPnav
 .bg-black {
   background: rgba(22, 22, 23, 0.9); }
 
@@ -1298,7 +1299,7 @@ iframe {
   border-bottom: 1px solid #C5C5D4; }
 
 #pp-nav-logo {
-  max-width: 150px;
+  width: 150px;
   top: 6px;
   position: relative; }
 
